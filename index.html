@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Version control</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+name: title
+class: middle, center
+
+# Version control
+.author[Jordan Suchow]
+
+
+---
+name: get git
+class: middle
+
+# Get git
+  + Download it from http://git-scm.com/.
+  + Install it.
+  + Check that it's working (in terminal):
+
+```bash
+>> git --version
+git version 1.8.3.4 (Apple Git-47)
+```
+  + Download a GUI, preferably http://mac.github.com/ or http://windows.github.com/.
+  + Create a github account (http://github.com).
+  + Send me (suchow@post.harvard.edu) an email with your account name and I'll add you to the visionlab organization.
+
+
+---
+name: preferences
+class: middle
+
+# Set up git
++ In prefrences, set your name and email address.
++ Or through the command line:
+
+```bash
+>> git config --global user.name "Your Name Here"
+```
+
+```bash
+>> git config --global user.email "your_email@example.com"
+```
+
+
+---
+name: create a repo
+class: middle
+
+# Create a repository
++ GUI (File ==> Create new repository)
++ Command line:
+```bash
+>> git init
+```
+
+# Clone a repository
++ Through http://github.com.
++ Command line:
+```bash
+>> git clone https://github.com/visionlab/MemToolbox.git
+```
++ Clone vs. download.
+
+
+---
+name: commits
+class: middle
+
+# Branches
++ Easy to create.
++ Helps to organize sets of changes.
++ Easy to switch between branches.
++ GUI: Branches ==> +
++ Command line:
+```bash
+>> git branch new-branch
+>> git checkout new-branch
+```
+
+
+---
+name: commits
+class: middle
+
+# Commits
++ A set of changes to the current version.
++ Can "stage" some changes w/o staging them all.
++ Each includes a commit message.
++ Committing is not pushing.
++ Command line:
+```bash
+>> git commit -m "This is ****ing awesome."
+```
+
+
+---
+name: pull requests
+class: middle
+
+# Pull request
++ Contribute your changes.
++ A Github thing.
+
+
+---
+name: issues
+class: middle
+
+# Issues
++ Bug tracking on Github.
++ Closing issues with commit messages.
+
+
+---
+name: practice
+class: middle
+
+# Practice.
+
+Do one of the following things and submit a pull request.
+
++ Fix the typo on slide 3 (and remove this line).
++ Remove the period on this slide's title.
++ Fix the name of the slide about branches.
++ Add a README with a line about what this is.
++ Add a license file with an MIT license.
+
+
+---
+name: vocabulary
+class: middle
+
+# Vocabulary
++ git
++ github
++ repository (repo)
++ commit
++ commit message
++ push
++ branch
++ fork
++ pull request
++ issue
+
+
+---
+name: learning more
+class: middle
+
+# Learning more
++ The book. http://git-scm.com/book
++ The tutorial. http://try.github.io/levels/1/challenges/1
++ The game. https://github.com/Gazler/githug
+
+
+
+    </textarea>
+    <script src="scripts/remark.min.js" type="text/javascript">
+
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create({ "highlightStyle": "tomorrow-night-bright" });
+    </script>
+  </body>
+</html>
